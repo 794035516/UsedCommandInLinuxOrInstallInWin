@@ -1,0 +1,33 @@
+setting选项出来:
+    sudo apt-get install gnome-control-center
+    sudo reboot now
+
+安装中文输入法:
+    一、添加中文语言支持
+    1.单击Ubuntu桌面右上角的三角符号，然后选择“Settings”，打开系统设置页面
+    2.在系统设置页面左侧的导航栏中选择“Region&Language”，然后在右侧页面中点击“Manage Install Languages”。
+    3.如果弹出下面这个窗口(the language support is not installed completely)，单击窗口中的 Install，然后等待安装完毕
+    4.单击“Install/Remove Languages”
+    5.勾选Chinese(simplified)，然后单击Apply，开始装简体中文
+    6.安装完毕后，单击Close
+    7.重启系统
+    二、输入法框架
+    每种输入法框架下，都有其支持的中文输入法（有些是框架自带的，有些需要另外安装）：
+        Fcitx：谷歌拼音、搜狗拼音、搜狗五笔拼音
+        IBus：智能拼音，五笔（86版）
+        XIM：略(现在用的相对比较少)
+    安装Fcitx的中文输入法
+    1.首先再终端中执行fcitx --version ，检测是否已经安装fcitx框架
+    2.安装fcitx框架, 如果安装不成功，可以先把Ubuntu使用的软件源换成国内的，比如：阿里源、清华源等
+        sudo apt-get update
+        sudo apt-get install fcitx-bin
+        安装完成后，可以在Ubuntu桌面的右上角看到一个键盘图标
+    3.sudo apt-get install fcitx-table
+      sudo apt-get install fcitx-table-all
+      安装fcitx-table时，会自动安装拼音输入法fcitx-pinyin
+      安装fcitx-table-all时，除了会自动安装fcitx-table和fcitx-pinyin之外，还会安装其他的一些输入法，比如：五笔、五笔拼音等等。本文没有安装fcitx-table-all
+    4.language support  选择输入法框架fcitx，然后单击Close，重启系统。单击Ubuntu右上角的小键盘图标，在下拉菜单里选择Configure Current Input Method，可以看到已经安装的两个拼音输入法
+    如果没有，点击右上角的键盘图标，点击“configure current input Method”, 在input Method这一个tab没有pinyin的话，点击左下角的“+”号，搜索pinyin或者Chinese，选择一个加入，我选择的是pinyin
+    5.按“CTRL+空格”键，在中文/英文输入法之间切换；按“CTRL+SHIFT”键，在fcitx框架中的多种中文输入法之间切换。
+    6.安装fcitx框架支持的其他中文输入法，比如：谷歌拼音输入法
+        sudo apt-get install fcitx-googlepinyin
