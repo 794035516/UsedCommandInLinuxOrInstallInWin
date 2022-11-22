@@ -1,3 +1,6 @@
+查看磁盘使用情况：
+    df -h
+
 最大的文件其实在 ~/.local/share/Trash 下，而这个正是LInux下的垃圾箱(可以理解为windows回收站)
 	sudo rm -rf ~/.local/share/Trash
 
