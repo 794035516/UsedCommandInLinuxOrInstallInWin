@@ -1,0 +1,27 @@
+linux桌面快捷方式
+新建一个XXX.desktop，这里以idea.desktop为例：
+添加一下内容（横线之内的）
+-------
+[Desktop Entry]
+# 编码
+Encoding=UTF-8
+# 版本（非必须）
+#Version=0.8.9
+# 名称，在桌面上显示的名字
+Name=IntelliJ IDEA
+# 注释
+Comment=IntelliJ IDEA
+# 执行命令，可执行程序的路径
+Exec="/home/ljx/Downloads/software/idea-IU-222.4345.14/bin/idea.sh" %f
+# 图标位置，支持常见图片格式
+Icon=/home/ljx/Downloads/software/idea-IU-222.4345.14/bin/idea.png
+# 这个很关键，当前表明这个快捷方式不是从终端打开
+Terminal=false
+# 类型
+Type=Application
+# 分类
+Categories=Developer;IDE;
+# 此参数请参考其他文章，我暂时没能理解:)
+StartupWMClass=jetbrains-idea
+-------
+编辑权限为744,然后右键可以Allow Launching，这样双击就可以打开软件了
