@@ -6,4 +6,4 @@ linux/ubuntu_20.04.1/目录下：
     install.txt：有关安装命令的
     other.txt：其他命令的，包含创建桌面快捷方式的
 
-    
+jetBrains激活码网址： http://idea.javatiku.cn/
